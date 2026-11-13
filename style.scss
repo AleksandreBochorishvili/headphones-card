@@ -1,7 +1,6 @@
-:root {
-  --primary: rgb(0, 149, 255);
-  --secondary: gray;
-}
+$primary: rgb(0, 149, 255);
+$secondary: gray;
+$third: rgba(0, 0, 0, 0.75);
 * {
    margin: 0;
    padding: 0;
@@ -23,9 +22,9 @@ section {
   gap: 10px;
   border-radius: 20px;
   transition: width -1s;
-  box-shadow: -2px 2px 23px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 2px 23px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 2px 23px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 2px 23px 4px $third;
+  -webkit-box-shadow: -2px 2px 23px 4px $third;
+  -moz-box-shadow: -2px 2px 23px 4px $third;
 
   img {
     border-radius: 8px 8px 0 0;
@@ -51,11 +50,11 @@ section {
   button {
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid var(--primary);
-    background-color: var(--primary);
+    border: 1px solid $primary;
+    background-color: $primary;
     &:hover {
-      border: 1px solid var(--secondary);
-      background-color: var(--secondary);
+      border: 1px solid $secondary;
+      background-color: $secondary;
     }
   }
 }
